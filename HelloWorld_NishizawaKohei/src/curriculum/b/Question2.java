@@ -79,6 +79,122 @@ public class Question2 {
  * 06
  * */    
         int value;
+        Scanner scannerNum = new Scanner(System.in);//インスタンスの作成(javaを使いやすくするためのプログラム？)
+        int numberQ6  = scannerNum.nextInt();//int型の正数をコンソールに入力出来るようにする
+        value = numberQ6;//変数valueにnumberQ6を代入
 
-	}
+        if(value%2 == 0) {//入力した値%2で計算し余りが0なら偶数
+        	System.out.println("偶数です");
+        }else {//入力した値/2で余りが出た場合奇数
+        	System.out.println("奇数です");
+        }
+        
+        
+/*
+ * 07
+ * */
+        Scanner scannerScore = new Scanner(System.in);//インスタンスの作成(javaを使いやすくするためのプログラム？)
+        int scoreQ7 = scannerScore.nextInt();//int型の正数をコンソールに入力できるようにする
+        
+        if(scoreQ7 >= 90) {
+        	System.out.println("優");
+        }else if(scoreQ7 >= 70){
+        	System.out.println("良");
+        }else if(scoreQ7 >= 50){
+        	System.out.println("可");
+        }else {
+        	System.out.println("不可");
+        }
+        
+        
+/*
+ * Q8
+ * */	
+        Scanner scannerStr = new Scanner(System.in);
+        String strQ8 = scannerStr.nextLine();//
+      
+        if(strQ8.isEmpty()) {
+        	System.out.println("入力が無効です");
+        }else {
+        	System.out.println(strQ8);
+        }
+        
+        
+/*
+ * Q9
+ * */        
+        Scanner scannerDay = new Scanner(System.in);//インスタンスの作成(javaを使いやすくするためのプログラム？)
+        int day = scannerDay.nextInt();//int型の正数をコンソールに入力できるようにする
+
+        switch(day) {//1～７の数字を入力し、曜日を表示
+        case 1:
+        	System.out.println("月曜日");
+        	break;
+        	
+        case 2:
+        	System.out.println("火曜日");
+        	break;
+        	
+        case 3:
+        	System.out.println("水曜日");
+        	break;
+        	
+        case 4:
+        	System.out.println("木曜日");
+        	break;
+        	
+        case 5:
+        	System.out.println("金曜日");
+        	break;
+        	
+        case 6:
+        	System.out.println("土曜日");
+        	break;
+        	
+        case 7:
+        	System.out.println("日曜日");
+        	break;
+        	
+        default://1～7以外の場合に無効な入力ですと表示
+        	System.out.println("無効な入力です");
+        	break;
+        }
+        
+        
+/*
+ * Q10
+ * */
+        Scanner scannerMonth = new Scanner(System.in);//インスタンスの作成(javaを使いやすくするためのプログラム？)
+        int month = scannerMonth.nextInt();//int型の正数をコンソールに入力できるようにする
+        
+        switch(month) {
+        case 12:
+        case 1:
+        case 2:
+        	System.out.println("冬");
+        	break;
+        	
+        case 3:
+        case 4:
+        case 5:
+        	System.out.println("春");
+        	break;
+        	
+        case 6:
+        case 7:
+        case 8:
+        	System.out.println("夏");
+        	break;
+        	
+        case 9:
+        case 10:
+        case 11:
+        	System.out.println("秋");
+        	break;
+        	
+        default://1～12以外の場合に無効な月ですと表示
+        	System.out.println("無効な月です");
+        	break;
+        }
+	}	
 }
