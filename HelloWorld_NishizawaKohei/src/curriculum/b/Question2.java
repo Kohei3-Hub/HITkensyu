@@ -9,7 +9,7 @@ public class Question2 {
  * */	
 		int score = 75;//int型に変数scoreを宣言して75を代入
 		
-		if(score > 60) { System.out.println("合計です！"); }//scoreが60以上の場合"合格です！"と表示
+		if(score > 60) { System.out.println("合格です！"); }//scoreが60以上の場合"合格です！"と表示
 		
 		
 /*
@@ -61,10 +61,9 @@ public class Question2 {
 /*
  * Q5
  * */
-		int num;//int型のnumを用意
-        Scanner scanner = new Scanner(System.in);//インスタンスの作成(javaを使いやすくするためのプログラム？)
-        int number = scanner.nextInt();//int型の正数をコンソールに入力出来るようにする
-        num = number;//変数numにnumberを代入
+        Scanner scanner = new Scanner(System.in);//インスタンスの作成(使いまわせるように設定)
+        String number = scanner.nextLine();//String型でコンソールへ入力
+        int num = Integer.parseInt(number);//String型からint型へ型変換
         
         if(num > 0){//0よりnumが大きければ正の数ですと表示
         	System.out.println("正の数です");
@@ -78,10 +77,8 @@ public class Question2 {
 /*
  * 06
  * */    
-        int value;
-        Scanner scannerNum = new Scanner(System.in);//インスタンスの作成(javaを使いやすくするためのプログラム？)
-        int numberQ6  = scannerNum.nextInt();//int型の正数をコンソールに入力出来るようにする
-        value = numberQ6;//変数valueにnumberQ6を代入
+        String numberQ6  = scanner.nextLine();//String型でコンソールへ入力
+        int value = Integer.parseInt(numberQ6);//
 
         if(value%2 == 0) {//入力した値%2で計算し余りが0なら偶数
         	System.out.println("偶数です");
@@ -93,14 +90,14 @@ public class Question2 {
 /*
  * 07
  * */
-        Scanner scannerScore = new Scanner(System.in);//インスタンスの作成(javaを使いやすくするためのプログラム？)
-        int scoreQ7 = scannerScore.nextInt();//int型の正数をコンソールに入力できるようにする
+        String scoreQ7 = scanner.nextLine();//String型でコンソールへ入力
+        int numberQ7 = Integer.parseInt(scoreQ7);//String型からint型へ型変換
         
-        if(scoreQ7 >= 90) {
+        if(numberQ7 >= 90) {
         	System.out.println("優");
-        }else if(scoreQ7 >= 70){
+        }else if(numberQ7 >= 70){
         	System.out.println("良");
-        }else if(scoreQ7 >= 50){
+        }else if(numberQ7 >= 50){
         	System.out.println("可");
         }else {
         	System.out.println("不可");
@@ -110,8 +107,7 @@ public class Question2 {
 /*
  * Q8
  * */	
-        Scanner scannerStr = new Scanner(System.in);
-        String strQ8 = scannerStr.nextLine();//
+        String strQ8 = scanner.nextLine();//String型でコンソールへ入力
       
         if(strQ8.isEmpty()) {
         	System.out.println("入力が無効です");
@@ -123,10 +119,10 @@ public class Question2 {
 /*
  * Q9
  * */        
-        Scanner scannerDay = new Scanner(System.in);//インスタンスの作成(javaを使いやすくするためのプログラム？)
-        int day = scannerDay.nextInt();//int型の正数をコンソールに入力できるようにする
-
-        switch(day) {//1～７の数字を入力し、曜日を表示
+        String day = scanner.nextLine();//String型でコンソールへ入力
+        int dayQ9 = Integer.parseInt(day);//String型からint型へ型変換
+        
+        switch(dayQ9) {//1～７の数字を入力し、曜日を表示
         case 1:
         	System.out.println("月曜日");
         	break;
@@ -164,10 +160,10 @@ public class Question2 {
 /*
  * Q10
  * */
-        Scanner scannerMonth = new Scanner(System.in);//インスタンスの作成(javaを使いやすくするためのプログラム？)
-        int month = scannerMonth.nextInt();//int型の正数をコンソールに入力できるようにする
+        String month = scanner.nextLine();//String型でコンソールへ入力
+        int monthQ10 = Integer.parseInt(month);//String型からint型へ型変換
         
-        switch(month) {
+        switch(monthQ10) {//1～12を入力して季節を表示
         case 12:
         case 1:
         case 2:
