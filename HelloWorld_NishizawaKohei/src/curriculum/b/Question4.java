@@ -143,16 +143,14 @@ public class Question4 {
  * */
 			int[][][] array9 =  {{{1,2},{3,4}},{{5,6},{7,8}}};//多次元配列で4行×2列で格納
 			
-			for(int i = 0; i< array9.length; i++) {//多重ループで
-				for(int j = 0; j< array9[i].length; j++) {//
-					for(int k = 0; k< array9[j].length; k++) {//ループで１つずつ数を確認
+			for(int i = 0; i< array9.length; i++) {//{{{1,2},{3,4}},{{5,6},{7,8}}}を確認
+				for(int j = 0; j< array9[i].length; j++) {//{{1,2},{3,4}},{{5,6},{7,8}}を確認
+					for(int k = 0; k< array9[i][j].length; k++) {//ループで１つずつ数を確認
 						System.out.println(array9[i][j][k]);
 					}
 				}
-
 			}
-			System.out.println(array9.length);
-
+			scanner.close();//scannerオブジェクトを閉じる
 	}
 
 }

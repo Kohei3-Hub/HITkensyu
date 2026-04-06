@@ -98,7 +98,8 @@ public class Question3 {
 	 
 	 while(num != 0) {//numが0じゃない場合に"数値を入力してください"を表示して0が入力されるまでループ
 		 System.out.println("数値を入力してください");
-		 num = scanner.nextInt();
+		 num = Integer.parseInt(scanner.nextLine());
+		 
 	 }
 
 	 	System.out.println("終了しました");
@@ -156,14 +157,14 @@ public class Question3 {
 	 			System.out.println( home +  "の残り台数は" + (home.trim().equals("テレビ") ? tvNum : displayNum) + "台です");//三項演算子を用いてtrueならテレビの数を表示、falseならディスプレイの数を表示
 	 			break;
 	 			
-	 		default://上記の商品名が入力された場合は表示する
+	 		default://上記以外の商品名が入力された場合は表示する
 	 			System.out.println("『" + home + "』は指定の商品ではありません");
 	 			break;
 	 				
 	 		}
 	 		
 	 	}
-	 	
+	 		scanner.close();
 	 	
 	}
 }	
