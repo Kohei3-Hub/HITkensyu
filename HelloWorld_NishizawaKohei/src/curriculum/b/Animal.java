@@ -4,26 +4,27 @@ public class Animal {
 
 	public static void main(String[] args) {
 		
-		Animal animal = new Animal();
+		Animal animal = new Animal();//オブジェクトを作成
 		
 		 // setterで値を設定
         setName("ライオン");
         setLength(2.1);
         setSpeed(80);
         
+        //コンソール表示用のメソッドを呼び出し
         showAnimal();
        
 			}
 	
-	//フィールド
+	//フィールドで名前、体調、速度を保存する器を用意
 	private static String name;
 	private static double length;
 	private static int speed;
 		
 			
-	//setter
+	//setterで値を入れるメソッドを用意
 	public static void setName(String name) {
-		Animal.name = name;
+		Animal.name = name;//
 	}
 	
 	public static void setLength(double length) {
@@ -35,9 +36,9 @@ public class Animal {
 	}
 			
 			
-	//getter
+	//getterで値を取り出すメソッドを用意
 	public static String getName() {
-		return Animal.name;
+		return Animal.name;//setterで入れたライオンを取り出す
 	}
 			
 	 public static double getLength() {
