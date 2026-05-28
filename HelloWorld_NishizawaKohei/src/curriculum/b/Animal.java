@@ -3,9 +3,7 @@ package curriculum.b;
 public class Animal {
 
 	public static void main(String[] args) {
-		
-		Animal animal = new Animal();//オブジェクトを作成
-		
+				
 		 // setterで値を設定
         setName("ライオン");
         setLength(2.1);

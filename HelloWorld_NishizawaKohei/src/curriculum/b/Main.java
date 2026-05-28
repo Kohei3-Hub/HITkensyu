@@ -3,7 +3,6 @@ public class Main {
 
 	public static void main(String[] args) {
 		//Q4メソッド呼び出し
-		Greeting greeting = new Greeting();
 		
 		Greeting.sayHello();
 		
