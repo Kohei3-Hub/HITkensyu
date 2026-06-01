@@ -2,18 +2,6 @@ package curriculum.b;
 
 public class Animal {
 
-	public static void main(String[] args) {
-				
-		 // setterで値を設定
-        setName("ライオン");
-        setLength(2.1);
-        setSpeed(80);
-        
-        //コンソール表示用のメソッドを呼び出し
-        showAnimal();
-       
-			}
-	
 	//フィールドで名前、体調、速度を保存する器を用意
 	private static String name;
 	private static double length;
